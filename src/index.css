@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--breakpoint-*: initial;
+	--breakpoint-sm: 570px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1020px;
+	--breakpoint-xl: 1320px;
+	--color-primary: #8750f7;
+	--color-secondary: #140c1c;
+}
+
+@utility container {
+	@apply mx-auto;
+}
+
+@theme {
+	--font-sora: "Sora", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Sora", sans-serif;
+}
+
+.linear-text {
+	line-height: 1.5;
+	font-family: "Sora";
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: -0.9px;
+	text-transform: uppercase;
+
+	background: linear-gradient(90deg, #ffffff 50%, rgba(255, 255, 255, 0.4) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.btn {
+	background: linear-gradient(90deg, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+	border-radius: 9999px;
+}
+
+.after_before {
+	position: relative;
+	text-align: center;
+}
+.after_before::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: calc(40% - 23px);
+	height: 2px;
+	background: rgba(255, 255, 255, 0.385);
+	z-index: 100;
+}
+.after_before::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: calc(40% - 23px);
+	height: 2px;
+	background: rgba(255, 255, 255, 0.385);
+	z-index: 100;
+}
