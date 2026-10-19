@@ -7,11 +7,6 @@ import VirtuslabLogo from "../assets/achivement (1).png";
 import SemiflatLogo from "../assets/achivement (2).png";
 import AutentikaLogo from "../assets/achivement (3).png";
 
-const FallbackLogo = ({ label }) => (
-  <div className="flex h-full w-full items-center justify-center rounded bg-[#1a1b1a] text-[11px] font-semibold text-white">
-    {label}
-  </div>
-);
 
 /* ---------- Data ---------- */
 const DESCRIPTION =

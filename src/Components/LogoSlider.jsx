@@ -7,7 +7,6 @@ import brand_4 from "../assets/Brand-4.png";
 import brand_5 from "../assets/Brand-5.png";
 import brand_6 from "../assets/Brand-6.png";
 import brand_7 from "../assets/Brand-7.png";
-import SectionHeading from "./SectionHeading";
 
 const Brand_1 = () => {
   return <img src={brand_1} alt="brand logo" />;

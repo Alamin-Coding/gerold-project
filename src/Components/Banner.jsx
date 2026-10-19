@@ -10,7 +10,7 @@ const Banner = () => {
 				<Container className="w-[1880px]">
 					<div>
 						<h1 className="text-[180px] font-semibold flex items-center gap-14">
-							Hello
+							Hello CIT
 							<CircularText
 								text="REACT*BITS*COMPONENTS*"
 								onHover="speedUp"
